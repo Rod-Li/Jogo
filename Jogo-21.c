@@ -1,4 +1,4 @@
-#include "funcoes.h"		//para usar a minha biblioteca de funções
+#include "funcoes.h"		//para usar a minha biblioteca de funÃ§Ãµes
 
 //-------------------------------INT MAIN------------------------------//
 
