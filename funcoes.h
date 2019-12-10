@@ -154,8 +154,8 @@ int ComprarCarta(){		/*FUNÇÃO: comprar carta(gerar random) + ás vale 1 ou 11*
 }
 
 int Jogador(){		/*FUNÇÃO: ?*/
-	int SN;
-	int Ver=0;
+	int SN;			//SN -> "sim ou não"
+	int Ver = 0;		//Ver -> "verificar"
 	printf("Escolha uma opção\n");
 	setaJogo(1, posicaoJogo); printf(" Comprar carta\t\t");
 	setaJogo(2, posicaoJogo); printf(" Terminar jogada");
@@ -176,16 +176,16 @@ int Jogador(){		/*FUNÇÃO: ?*/
 		}
 	
 	if(teclaPressionadaJogo == 13 && posicaoJogo == 1){
-		SN=1;
-		Ver=1;
+		SN = 1;
+		Ver = 1;
 	}
 	else if(teclaPressionadaJogo == 13 && posicaoJogo == 2){
-		SN=2;
-		Ver=1;
+		SN = 2;
+		Ver = 1;
 	}
 	system("Cls");
 	if(Ver ==1){
-		if (SN == 2){
+		if (SN == 2){	//retorna que o jogador não quer mais cartas
 			return 404;
 		}
 		else{
